@@ -1,0 +1,21 @@
+---
+title: "Counties"
+author: "David Kane"
+format: html
+---
+
+
+```{r}
+#| echo: false
+#| message: false
+library(tidyverse)
+library(primer.data)
+```
+
+
+```{r}
+connectedness |> 
+  ggplot(aes(x = population, y = connectedness)) +
+    geom_point()
+```
+
